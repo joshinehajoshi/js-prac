@@ -18,4 +18,6 @@ function abc(s) {
     }
     console.log("neha",stack.length === 0)
 }
+
+
 abc("[{}]")

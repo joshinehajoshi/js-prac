@@ -11,4 +11,16 @@ const abc = (arr) => {
     }
 }
 
+function parent() {
+    for(var i=0; i<5; i++){
+        function child(a) {
+            setTimeout(function(){
+                console.log(a)
+            }, a*1000)
+        }
+        child(i)
+    }
+}
+parent()
+
 abc([1,2,3,4,5,1])
